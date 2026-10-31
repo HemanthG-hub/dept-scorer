@@ -1,0 +1,146 @@
+{
+  "project_name": "AI Code Security Debt Scorer",
+  "archetype": "Retro-Futuristic Tactical Cybersecurity Command Center",
+  "target_audience": "Developers, Security Engineers, DevOps Teams, and IoT/Firmware Developers",
+  "color_palette": {
+    "background_main": "#090D16",
+    "background_surface": "#0F172A",
+    "background_card": "#131C2E",
+    "background_card_hover": "#1E293B",
+    "border_subtle": "#1E293B",
+    "border_highlight": "#334155",
+    "primary_cyan": "#00F0FF",
+    "primary_cyan_glow": "rgba(0, 240, 255, 0.25)",
+    "accent_amber": "#F59E0B",
+    "accent_crimson": "#EF4444",
+    "accent_emerald": "#10B981",
+    "text_primary": "#F8FAFC",
+    "text_secondary": "#94A3B8",
+    "text_muted": "#64748B",
+    "risk_colors": {
+      "CRITICAL": {
+        "text": "#FCA5A5",
+        "bg": "rgba(239, 68, 68, 0.15)",
+        "border": "#EF4444"
+      },
+      "HIGH": {
+        "text": "#FDE68A",
+        "bg": "rgba(245, 158, 11, 0.15)",
+        "border": "#F59E0B"
+      },
+      "MEDIUM": {
+        "text": "#93C5FD",
+        "bg": "rgba(59, 130, 246, 0.15)",
+        "border": "#3B82F6"
+      },
+      "LOW": {
+        "text": "#A7F3D0",
+        "bg": "rgba(16, 185, 129, 0.15)",
+        "border": "#10B981"
+      }
+    }
+  },
+  "typography": {
+    "font_family_heading": "Outfit, Space Grotesk, sans-serif",
+    "font_family_code": "JetBrains Mono, Fira Code, monospace",
+    "font_family_body": "Plus Jakarta Sans, Inter, sans-serif",
+    "h1": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white",
+    "h2": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white",
+    "h3": "text-xl sm:text-2xl font-semibold text-slate-100",
+    "h4": "text-lg font-medium text-slate-200",
+    "code_editor": "font-mono text-sm leading-relaxed"
+  },
+  "spacing_and_layout": {
+    "container_padding": "px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto",
+    "card_padding": "p-5 sm:p-6",
+    "grid_gap": "gap-6",
+    "border_radius": "rounded-xl"
+  },
+  "pages": {
+    "landing_page": {
+      "sections": [
+        "Hero with live Security Debt Score gauge preview & instant demo button",
+        "Vulnerability Coverage Matrix (OWASP Top 10 + IoT/Firmware rules)",
+        "Transparent Security Scoring Engine explanation",
+        "Interactive Before/After code remediation preview",
+        "Feature Grid (Deterministic Rules + AI-Assisted Deep Analysis)"
+      ]
+    },
+    "code_scanner": {
+      "components": [
+        "Language Selector dropdown (Auto-detect, Python, JavaScript/TypeScript, C/C++, Arduino/ESP32, SQL)",
+        "Preset Vulnerable Code snippets buttons (Hardcoded Secrets, SQLi, Buffer Overflow, Unencrypted MQTT/WiFi, Command Injection)",
+        "Multi-line Code Editor with line numbers and file upload drag-and-drop zone",
+        "Action Bar: 'Scan Code' CTA button with electric neon pulse effect, 'Clear Code' button",
+        "Scan Progress modal/indicator showing deterministic static analysis + AI agent evaluation status"
+      ]
+    },
+    "security_dashboard": {
+      "components": [
+        "Security Debt Score Circular Gauge (0-100 score, dynamic color green to red)",
+        "Risk Rating Banner (CRITICAL / HIGH / MEDIUM / LOW)",
+        "Issue Metric Cards (Critical, High, Medium, Low severity counters)",
+        "Debt Breakdown Chart (Severity impact, OWASP category distribution, Exploitability index)",
+        "Findings Overview Table with direct line jump links"
+      ]
+    },
+    "vulnerability_details": {
+      "components": [
+        "Selected Finding Details Banner (Vulnerability Name, CWE, OWASP Category, Line Number)",
+        "Vulnerable Code Inspector with highlighted threat lines",
+        "AI Explanation Panel clearly labeled [AI-Assisted Finding / Mock AI Mode]",
+        "Remediation & Secure Code Replacement View (Diff mode / Copyable fix snippet)"
+      ]
+    },
+    "scan_history": {
+      "components": [
+        "Search & Language filter controls",
+        "History List Table (Scan ID, Timestamp, Language, Score, Risk Level, Issues count, Actions)",
+        "Quick Re-run and View Printable Report actions"
+      ]
+    },
+    "security_report": {
+      "components": [
+        "Printable/Exportable layout (@media print optimized)",
+        "Executive Summary Header with Timestamp, Code Fingerprint, and Risk Badge",
+        "Detailed Debt Breakdown Table & Remediation Checklist"
+      ]
+    }
+  },
+  "media_assets": {
+    "hero_background": "https://images.unsplash.com/photo-1518773553398-650c184e0bb3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDZ8MHwxfHNlYXJjaHwxfHxkYXJrJTIwY3liZXIlMjBjb2RlJTIwaW50ZXJmYWNlJTIwZ2xvd2luZyUyMHNjcmVlbnxlbnwwfHx8fDE3ODgzNzUxNjh8MA&ixlib=rb-4.1.0&q=85",
+    "code_grid": "https://images.unsplash.com/photo-1608742213509-815b97c30b36?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDZ8MHwxfHNlYXJjaHwyfHxkYXJrJTIwY3liZXIlMjBjb2RlJTIwaW50ZXJmYWNlJTIwZ2xvd2luZyUyMHNjcmVlbnxlbnwwfHx8fDE3ODgzNzUxNjh8MA&ixlib=rb-4.1.0&q=85"
+  },
+  "testing_attributes": {
+    "required_attribute": "data-testid",
+    "key_elements": [
+      "nav-landing-link",
+      "nav-scanner-link",
+      "nav-dashboard-link",
+      "nav-history-link",
+      "nav-report-link",
+      "language-select",
+      "code-input-textarea",
+      "file-upload-input",
+      "scan-code-button",
+      "load-preset-python",
+      "load-preset-iot",
+      "load-preset-js",
+      "security-debt-score-value",
+      "risk-level-badge",
+      "vulnerability-item-row",
+      "ai-explanation-card",
+      "secure-fix-code-block",
+      "export-pdf-report-button"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Ensure dark mode is default using #090D16 background with cyan #00F0FF accents and amber/crimson risk badges.",
+    "Implement combined deterministic analysis + AI-assisted analysis service in Python FastAPI.",
+    "Support Python, JS/TS, SQL, C/C++, and Arduino/ESP32 IoT firmware security rules.",
+    "Include transparent score calculation logic (0-100 debt score based on severity weights, vulnerability count, sensitive data exposure).",
+    "Always display '[AI-Assisted Finding]' or '[Mock AI Mode]' badges on AI-generated panels.",
+    "Include exportable/printable Security Report formatted for browser printing (@media print styling).",
+    "Ensure all interactive components contain data-testid attributes according to testing specs."
+  ]
+}
